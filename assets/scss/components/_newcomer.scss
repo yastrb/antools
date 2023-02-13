@@ -1,0 +1,90 @@
+﻿.newcomer {
+    &__block {
+        display: flex;
+    }
+    &__items {
+        flex: 50%;
+        &-second {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    &__title {
+        font-size: var(--h2-font-size);
+        line-height: 3.875rem;
+        margin-bottom: 30px;
+    }
+    & span {
+        display: block;
+        font-size: var(--bigger-font-size);
+        line-height: 1.875rem;
+        margin-bottom: 3.75rem;
+    }
+}
+
+.small-tools {
+    flex: 50%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    max-width: 18rem;
+    border-radius: 15px;
+    transition: 0.3s;
+    &__container {
+        padding: 1.75rem 1.3125rem
+    }
+    &__title {
+        background-image: url(/assets/img/tools1.png);
+        height: 64px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 5.9375rem;
+        margin-bottom: 1.9375rem;
+        & p {
+            font-size: 2.25rem;
+            color: var(--title-color);
+            line-height: 2.25rem;
+            margin-bottom: 0.25rem;
+        }
+        #small {
+            color: var(--first-color);
+            font-size: 1.6875rem;
+            line-height: 1.6875rem;
+            filter: invert(0.3);
+        }
+    }
+    &__descriptions {
+        font-size: var(--normal-font-size);
+        line-height: 1.875rem;
+        margin-bottom: 1.875rem;
+    }
+    &__data {
+        display: flex;
+        justify-content: space-between;
+        &-img {
+            font-size: var(--h3-font-size);
+            display: flex;
+            gap: 1rem;
+        }
+        &-img-1 {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        &-button {
+            background-color: transparent;
+            border: none;
+            transition: 0.3s;
+            &:hover {
+                background-color: var(--first-color);
+            }
+        }
+    }
+    &:hover {
+        background: linear-gradient(30deg, #1e252b, #2b2e32);
+        transform: translateY(-10px);
+        animation: float 4s ease-in-out infinite;
+    }
+    .active {
+        color: red;
+    }
+}

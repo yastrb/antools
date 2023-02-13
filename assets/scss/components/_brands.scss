@@ -1,0 +1,39 @@
+﻿.brands {
+    padding-inline: 0.9375rem;
+    &__wrapper {
+        overflow: hidden;
+        position: relative;
+        border-radius: 25px;
+    }
+    &__title {
+        font-size: var(--h3-font-size);
+        text-align: center;
+        line-height: 36px;
+        margin-bottom: 55px;
+    }
+    &__container {
+        background-color: #21282F;
+        border-radius: 25px;
+        padding: 3.4375rem 5.1875rem;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__shape {
+        width: 200px;
+        height: 200px;
+        top: -4rem;
+        left: -4rem;
+        background-color: #FF6E30;
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(250px);
+    }
+}

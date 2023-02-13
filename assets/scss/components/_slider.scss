@@ -1,0 +1,62 @@
+﻿.slider {
+    &__card {
+        position: relative;
+        display: flex;
+        gap:3.625rem;
+        padding-inline: 11.5rem;
+        position: relative;
+        margin: 0 auto;
+        position: relative;
+        height: 600px;
+        background-repeat: no-repeat;
+        
+    }
+    &__image {
+        width: 25rem;
+        height: 30.75rem;
+    }
+    &__content {
+        position: relative;
+        display: block;
+        padding-top: 8rem;
+        letter-spacing: 1.5px;
+        line-height: 1.875rem;
+
+        &:before {
+            content: url(/assets/img/elem.png);
+            position: absolute;
+            top: 5rem;
+            left: -2.5rem;
+            width: 103px;
+            height: 103px;
+        }
+    }
+    &__block {
+        position: absolute;
+        bottom: 8rem;
+        left: 20rem;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        & span {
+            display: block;
+            font-size: 1.625rem;
+            line-height: 2.4375rem;
+            color: var(--title-color);
+            letter-spacing: 0.0938rem;
+            font-weight: var(--font-medium);
+        }
+        & small {
+            font-size: var(--normal-font-size);
+            line-height: 1.5rem;
+        }
+
+    }
+}
+.swiper-pagination-bullet{
+    background-color: var(--text-color);
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}

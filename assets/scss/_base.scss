@@ -1,0 +1,101 @@
+﻿/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+    font-family: var(--text-color);
+    font-size: var(--small-font-size);
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+    max-width: 76.5rem;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+    box-sizing: content-box;
+}
+.main {
+    overflow: hidden;
+}
+.section {
+    padding-block: 6.25rem;
+
+    &__title {
+        font-size: var(--h2-font-size);
+        font-weight: var(--font-medium);
+        line-height: 3.9rem;
+        text-align: center;
+        margin-bottom: 1.875rem;
+    }
+}
+
+.button {
+    max-width: 11.5rem;
+    background-color: var(--first-color);
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    line-height: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--first-color);
+    padding: 0.5625rem 2.1875rem;
+    transition: 0.3s;
+    &:hover {
+        background: transparent;
+        border: 1px solid var(--first-color);
+        border: none;
+    }
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}

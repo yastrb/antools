@@ -1,0 +1,19 @@
+﻿.contributor {
+    & span {
+        margin-bottom: 6.25rem;
+        display: block;
+        text-align: center;
+        line-height: 1.875rem;
+    }
+    &__search {
+        margin: 0 auto;
+        margin-bottom: 6.875rem;
+        display: flex;
+        align-items: center;
+        width: 31.125rem;
+        justify-content: space-between;
+        background-color: #283036;
+        padding: 0.625rem;
+        border-radius: 0.9375rem;
+    }
+}
