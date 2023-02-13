@@ -91,18 +91,6 @@ button {
   border: none;
 }
 
-@-webkit-keyframes float {
-  0% {
-    transform: translateY(0) rotate(0);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: translateY(0) rotate(0);
-  }
-}
-
 @keyframes float {
   0% {
     transform: translateY(0) rotate(0);
@@ -332,10 +320,6 @@ button {
   color: var(--second-color);
   filter: invert(0.4);
 }
-.home__input:-ms-input-placeholder {
-  color: var(--second-color);
-  filter: invert(0.4);
-}
 .home__input::placeholder {
   color: var(--second-color);
   filter: invert(0.4);
@@ -345,7 +329,6 @@ button {
   gap: 1.5rem;
 }
 .home__social-link {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   font-size: 2rem;
@@ -435,8 +418,7 @@ button {
 .small-tools:hover {
   background: linear-gradient(30deg, #1e252b, #2b2e32);
   transform: translateY(-10px);
-  -webkit-animation: float 4s ease-in-out infinite;
-          animation: float 4s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 .small-tools .active {
   color: red;
@@ -526,8 +508,7 @@ button {
 .tools:hover {
   background: linear-gradient(30deg, #1e252b, #2b2e32);
   transform: translateY(-10px);
-  -webkit-animation: float 4s ease-in-out infinite;
-          animation: float 4s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 .tools .active {
   color: red;
